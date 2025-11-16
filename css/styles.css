@@ -44,9 +44,7 @@ button {
 }
 
 .container {
-    max-width: 1240px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1340px;    
     margin-left: auto;
     margin-right: auto;
 }
@@ -84,7 +82,6 @@ header .container {
     font-size: 20px;
     letter-spacing: -0.03em;
     color: #1b414b;
-   
 }
 
 .header-nav-list {
@@ -136,7 +133,7 @@ header .container {
 .hero-title {    
     font-weight: 500;
     font-size: 80px;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.02em;
     text-align: center;
     color: #fbfbfb;
 
@@ -164,28 +161,36 @@ header .container {
     width: 179px;
     height: 52px;
     background: #1b414b;
+    border:none;
 
     font-weight: 500;
     font-size: 18px;
     line-height: 1;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.02em;
     color: #fbfbfb;
 }
 /* #endregion hero */
 
 /* #region about */
 .about  {
-    background-color: #FBFBFB;
+    /* max-width: 1340px; */
+    margin: 0 auto;
+    padding-bottom: 132px;
+}
+
+.container-hz {
+    background-color: #fbfbfb;
     border-radius: 24px;
-    margin: 0 50px; 
-    max-width: 1340px;   
-    margin: 0 auto;   
+    width: 1340px;
+
+
 }
 
 .about-text-section {
     display: flex;
     padding: 50px 50px 100px 50px;
-    
+    justify-content: space-between;
+    gap: 299px;
     
 }
 
@@ -193,24 +198,25 @@ header .container {
     font-weight: 500;
     font-size: 48px;
     line-height: 1;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.02em;
     color: #1b414b;
-    margin-right: 299px;
+    min-width: 537px;
     
 }
 
 .about-text-container {
-    display: block;
-    justify-content: end;
+    display: flex;
+    min-width: 404px;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .about-text-strong {
     font-weight: 400;
     font-size: 23px;
     line-height: 1;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.02em;
     color: #1b414b;
-    margin-bottom: 20px;
 }
 
 .about-text {
@@ -219,6 +225,7 @@ header .container {
     line-height: 1.15;
     letter-spacing: -0.02em;
     color: #040306;
+    opacity: 0.4;
 }
 /* #endregion about */
 
@@ -226,20 +233,24 @@ header .container {
 
 .yacht-catalog {
     padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .yacht-catalog-title {
     font-weight: 500;
     font-size: 48px;
     line-height: 1;
-    letter-spacing: 0.02em;
-    text-align: center;
+    letter-spacing: -0.02em;
     color: #fbfbfb;
     text-align: center;
     max-width: 714px;
     margin-right: auto;
     margin-bottom: 75px;
     margin-left: auto;
+}
+
+.yacht-card {
+    margin-bottom: 50px;
 }
 
 .yacht-card-list {
@@ -266,15 +277,63 @@ header .container {
     width: 179px;
     height: 52px;
     background-color: transparent;
-    border: 1px solid #fff;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    display: block;
+    border: 1px solid rgba(251, 251, 251, 0.35);
+    
     font-weight: 500;
     font-size: 18px;
+    line-height: 1.1;
+    cursor: pointer;
+    margin: 0 auto;
+    
+}
+/* #endregion yachts catalog */
+
+/* #region benefits */
+.benefits-section {
+    padding-bottom: 150px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits {
+    display: flex;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 24px;
+    background: #1b414b;
+}
+
+.benefits-number {
+    font-weight: 500;
+    font-size: 32px;    
     line-height: 1;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.05em;
     color: #fbfbfb;
 }
 
-.yacht-card {
-    margin-bottom: 50px;
+.benefits-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
 }
-/* #endregion yachts catalog */
+/* #endregion benefits */
