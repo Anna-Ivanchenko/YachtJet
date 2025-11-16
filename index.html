@@ -126,8 +126,11 @@
                   width="360"
                   height="268"
                 />
-                <h3 class="yacht-card-name">Arrow</h3>
-                <p class="yacht-card_type">LUXURY YACHTS</p>
+                <div class="yacht-card-title-container">
+                  <h3 class="yacht-card-name">Arrow</h3>
+                  <p class="yacht-card_type">LUXURY YACHTS</p>
+                </div>
+                <hr class="yacht-catalog-line" />
                 <ul class="yacht-card-info">
                   <li class="yacht-card-info-item">
                     <p class="yacht-card-label">LENGTH</p>
@@ -159,8 +162,11 @@
                   width="360"
                   height="268"
                 />
-                <h3 class="yacht-card-name">BENETTI OASIS 40M BO122</h3>
-                <p class="yacht-card_type">LUXURY YACHTS</p>
+                <daiv class="yacht-card-title-container">
+                  <h3 class="yacht-card-name">BENETTI OASIS 40M BO122</h3>
+                  <p class="yacht-card_type">LUXURY YACHTS</p>
+                </daiv>
+                <hr class="yacht-catalog-line" />
                 <ul class="yacht-card-info">
                   <li class="yacht-card-info-item">
                     <p class="yacht-card-label">LENGTH</p>
@@ -192,8 +198,11 @@
                   width="360"
                   height="268"
                 />
-                <h3 class="yacht-card-name">BELLE ANNA</h3>
-                <p class="yacht-card_type">LUXURY YACHTS</p>
+                <div class="yacht-card-title-container">
+                  <h3 class="yacht-card-name">BELLE ANNA</h3>
+                  <p class="yacht-card_type">LUXURY YACHTS</p>
+                </div>
+                <hr class="yacht-catalog-line" />
                 <ul class="yacht-card-info">
                   <li class="yacht-card-info-item">
                     <p class="yacht-card-label">LENGTH</p>
@@ -231,35 +240,42 @@
         <div class="container">
           <h2 class="benefits-title visually-hidden">Benefits</h2>
           <div class="benefits">
-            <ul class="benefits-list">
-              <li class="benefits-item">
-                <h3 class="benefits-number">01</h3>
-                <p class="benefits-text">
-                  Swimming and water sports: try your hand at water skiing
-                </p>
-              </li>
-              <li class="benefits-item">
-                <h3 class="benefits-number">02</h3>
-                <p class="benefits-text">
-                  Fishing: try to catch your own dinner
-                </p>
-              </li>
-              <li class="benefits-item">
-                <h3 class="benefits-number">03</h3>
-                <p class="benefits-text">
-                  Sightseeing tours: take a shore or island tour, enjoy the
-                  views and sunsets from the water
-                </p>
-              </li>
-              <li class="benefits-item">
-                <h3 class="benefits-number">04</h3>
-                <p class="benefits-text">
-                  Rest and relaxation: read a book or listen to music while
-                  enjoying the outdoor atmosphere.
-                </p>
-              </li>
-            </ul>
+            <div class="benefits-list-container">
+              <ul class="benefits-list">
+                <li class="benefits-item">
+                  <p class="benefits-number">01</p>
+                  <hr class="benefits-item-line" />
+                  <p class="benefits-text">
+                    Swimming and water sports: try your hand at water skiing
+                  </p>
+                </li>
+                <li class="benefits-item">
+                  <p class="benefits-number">02</p>
+                  <hr class="benefits-item-line" />
+                  <p class="benefits-text">
+                    Fishing: try to catch your own dinner
+                  </p>
+                </li>
+                <li class="benefits-item">
+                  <p class="benefits-number">03</p>
+                  <hr class="benefits-item-line" />
+                  <p class="benefits-text">
+                    Sightseeing tours: take a shore or island tour, enjoy the
+                    views and sunsets from the water
+                  </p>
+                </li>
+                <li class="benefits-item">
+                  <p class="benefits-number">04</p>
+                  <hr class="benefits-item-line" />
+                  <p class="benefits-text">
+                    Rest and relaxation: read a book or listen to music while
+                    enjoying the outdoor atmosphere.
+                  </p>
+                </li>
+              </ul>
+            </div>
             <img
+              class="benefits-photo"
               src="./images/main_images/deck.jpg"
               alt="yachts deck"
               width="540"
@@ -270,60 +286,65 @@
       </section>
       <!-- #endregion benefits -->
 
-      <!-- #region form rent -->
+      <!-- #region form-rent -->
       <section class="form-section">
         <div class="container">
-          <img
-            src="./images/main_images/yaht_sect_form.jpg"
-            alt="A yacht at night on the background of mountains"
-            width="768"
-            height="536"
-          />
-          <div class="form-container">
-            <h2 class="form-section-title">Rent a yacht now</h2>
-            <form class="form" name="rental-yacht-form" autocomplete="off">
-              <label class="form-label">
-                <input
-                  class="form-input"
-                  type="text"
-                  name="full_name"
-                  placeholder="Full Name"
-                />
-              </label>
-
-              <label class="form-label">
-                <input
-                  class="form-input"
-                  type="email"
-                  name="user_email"
-                  placeholder="Email"
-                />
-              </label>
-
-              <label class="form-label">
-                <input
-                  class="form-input"
-                  type="tel"
-                  name="user_phone"
-                  placeholder="Phone number"
-                />
-              </label>
-
-              <label class="form-label">
-                <textarea
-                  class="form-input"
-                  name="comment"
-                  placeholder="Comment"
-                  rows="4"
-                ></textarea>
-              </label>
-
-              <button type="submit" class="form-button">Send</button>
-            </form>
+          <div class="form-section-container">
+            <img
+              class="form-section-photo"
+              src="./images/main_images/yaht_sect_form.jpg"
+              alt="A yacht at night on the background of mountains"
+              width="768"
+              height="536"
+            />
+            <div class="form-container">
+              <h2 class="form-section-title">Rent a yacht now</h2>
+              <div class="form-container-hz">
+                <form class="form" name="rental-yacht-form" autocomplete="off">
+                  <label class="form-label" for="user_name">
+                    <input
+                      id="user-name"
+                      class="form-input"
+                      type="text"
+                      name="user_name"
+                      placeholder="Full Name"
+                    />
+                  </label>
+                  <label class="form-label" for="user_email">
+                    <input
+                      id="user_email"
+                      class="form-input"
+                      type="email"
+                      name="user_email"
+                      placeholder="Email"
+                    />
+                  </label>
+                  <label class="form-label" for="user_tel">
+                    <input
+                      id="user_tel"
+                      class="form-input"
+                      type="tel"
+                      name="user_phone"
+                      placeholder="Phone number"
+                    />
+                  </label>
+                  <label class="form-label" for="user_comment">
+                    <textarea
+                      id="user_comment"
+                      class="form-input-comment"
+                      name="comment"
+                      placeholder="Comment"
+                      rows="4"
+                    ></textarea>
+                  </label>
+                  <button type="submit" class="form-button">Send</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!-- #endregion form rent -->
+      <!-- #endregion form-rent -->
 
       <!-- #region customers -->
       <section class="customers">
