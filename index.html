@@ -21,59 +21,84 @@
   </head>
   <body>
     <!-- #region header -->
-    <header class="header-page">
-      <div class="container">
-        <a class="header-logo" href="./index.html">yachtjet</a>
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li class="heder-nav-item">
-              <a href="/" class="nav-link">About</a>
+    <div class="top-wrapper">
+      <header class="header-page">
+        <div class="container">
+          <a class="header-logo" href="./index.html">yachtjet</a>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="heder-nav-item">
+                <a href="/" class="nav-link">About</a>
+              </li>
+              <li class="heder-nav-item">
+                <a href="/" class="nav-link">Yachts</a>
+              </li>
+              <li class="heder-nav-item">
+                <a href="/" class="nav-link">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-social">
+            <li>
+              <a
+                class="header-social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg class="header-social-icon" width="24" height="24">
+                  <use href="./images/icon_images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="heder-nav-item">
-              <a href="/" class="nav-link">Yachts</a>
+            <li>
+              <a
+                class="header-social-link"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Youtube"
+              >
+                <svg class="header-social-icon" width="24" height="24">
+                  <use href="./images/icon_images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
             </li>
-            <li class="heder-nav-item">
-              <a href="/" class="nav-link">Reviews</a>
+            <li>
+              <a
+                class="header-social-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg class="header-social-icon" width="24" height="24">
+                  <use href="./images/icon_images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="header-social">
-          <li>
-            <a class="header-social-link" href="#" target="_blank">
-              <img src="./images/icon_images/instagram.svg" alt="instagram" />
-            </a>
-          </li>
-          <li>
-            <a class="header-social-link" href="#" target="_blank">
-              <img src="./images/icon_images/youtube.svg" alt="youtube" />
-            </a>
-          </li>
-          <li>
-            <a class="header-social-link" href="#" target="_blank">
-              <img src="./images/icon_images/facebook.svg" alt="facebook" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <!-- #endregion header -->
-    <main>
-      <!-- #region hero -->
-      <section class="hero-section">
-        <div class="container">
-          <h1 class="hero-title">
-            Explore the High Seas with Our Luxury Yacht Rentals
-          </h1>
-          <p class="hero-text">
-            Experience the freedom and luxury of yachting on the open seas.
-            Choose from our top-of-the-line yachts and embark on an
-            unforgettable journey surrounded by breathtaking views and
-            state-of-the-art amenities.
-          </p>
-          <button type="button" class="hero-button">Yacht rental</button>
         </div>
-      </section>
+      </header>
+      <!-- #endregion header -->
+      <main>
+        <!-- #region hero -->
+        <section class="hero-section">
+          <div class="container hero-container">
+            <h1 class="hero-title">
+              Explore the High Seas with Our Luxury Yacht Rentals
+            </h1>
+            <p class="hero-text">
+              Experience the freedom and luxury of yachting on the open seas.
+              Choose from our top-of-the-line yachts and embark on an
+              unforgettable journey surrounded by breathtaking views and
+              state-of-the-art amenities.
+            </p>
+            <button type="button" class="hero-button">Yacht rental</button>
+          </div>
+        </section>
+    </div>
       <!-- #endregion hero -->
 
       <!-- #region about -->
@@ -99,12 +124,30 @@
                 </p>
               </div>
             </div>
-            <img
-              src="./images/main_images/AboutPage.jpg"
-              alt="yacht at sea"
-              width="1340"
-              height="470"
-            />
+            <picture>
+              <source media="(min-width: 1440px)" 
+                srcset="./images/about-web/about-page-1440-d@1x.webp 1x, ./images/about-web/about-page-1440-d@2x.webp 2x" 
+                width="1340" height="470"
+              >
+              <source media="(min-width: 1280px)" 
+                srcset="./images/about-web/about-page-1280-d@1x.webp 1x, ./images/about-web/about-page-1280-d@2x.webp 2x" 
+                width="1180" height="470"
+              >
+              <source media="(min-width: 768px)" 
+                srcset="./images/about-web/about-page-t@1x.webp 1x, ./images/about-web/about-page-t@2x.webp 2x" 
+                width="704" height="470"
+              >
+              <source media="(max-width: 768px)" 
+                srcset="./images/about-web/about-page-m@1x.webp 1x, ./images/about-web/about-page-m@2x.webp 2x" 
+                width="335" height="395"
+              >
+            </picture>
+            <!-- <img
+              src="./images/about-web/about-page-m@1x.webp"
+              alt="yacht at sea"              
+              width="335"
+              height="395"
+            /> -->
           </div>
         </div>
       </section>
@@ -304,7 +347,7 @@
                   <div class="form-label-container">
                     <label class="form-label" for="user_name">
                       <input
-                        id="user-name"
+                        id="user_name"
                         class="form-input"
                         type="text"
                         name="user_name"
