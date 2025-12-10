@@ -347,13 +347,11 @@ header .container {
 }
 
 .yacht-card-info {
-    padding: 16px 16px 0 16px;
-}
-.yacht-card-info-item {
     display: flex;
     justify-content: space-between;
-    
+    padding: 16px 16px 0 16px;
 }
+
 .yacht-card-info-item {
     padding-bottom: 6px;
 }

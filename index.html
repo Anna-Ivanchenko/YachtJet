@@ -236,22 +236,16 @@
                 <ul class="yacht-card-info">
                   <li class="yacht-card-info-item">
                     <p class="yacht-card-label">LENGTH</p>
-                    <p class="yacht-card-value">48m(155ft)</p>
-                  </li>
-                  <li class="yacht-card-info-item">
                     <p class="yacht-card-label">BUILDER</p>
-                    <p class="yacht-card-value">Admiral</p>
-                  </li>
-                  <li class="yacht-card-info-item">
                     <p class="yacht-card-label">BUILT</p>
-                    <p class="yacht-card-value">2021</p>
-                  </li>
-                  <li class="yacht-card-info-item">
                     <p class="yacht-card-label">GUESTS</p>
-                    <p class="yacht-card-value">11 in 5 cabins</p>
+                    <p class="yacht-card-label">PRICE</p>
                   </li>
                   <li class="yacht-card-info-item">
-                    <p class="yacht-card-label">PRICE</p>
+                    <p class="yacht-card-value">48m(155ft)</p>
+                    <p class="yacht-card-value">Admiral</p>
+                    <p class="yacht-card-value">2021</p>
+                    <p class="yacht-card-value">11 in 5 cabins</p>
                     <p class="yacht-card-value">€33,500,000</p>
                   </li>
                 </ul>
@@ -303,22 +297,16 @@
                 <ul class="yacht-card-info">
                   <li class="yacht-card-info-item">
                     <p class="yacht-card-label">LENGTH</p>
-                    <p class="yacht-card-value">41m (133ft)</p>
-                  </li>
-                  <li class="yacht-card-info-item">
                     <p class="yacht-card-label">SHIPYARD</p>
-                    <p class="yacht-card-value">Benetti</p>
-                  </li>
-                  <li class="yacht-card-info-item">
                     <p class="yacht-card-label">BUILT</p>
-                    <p class="yacht-card-value">2025</p>
-                  </li>
-                  <li class="yacht-card-info-item">
                     <p class="yacht-card-label">GUESTS</p>
-                    <p class="yacht-card-value">10 in 5 cabins</p>
+                    <p class="yacht-card-label">PRICE</p>
                   </li>
                   <li class="yacht-card-info-item">
-                    <p class="yacht-card-label">PRICE</p>
+                    <p class="yacht-card-value">41m (133ft)</p>
+                    <p class="yacht-card-value">Benetti</p>
+                    <p class="yacht-card-value">2025</p>
+                    <p class="yacht-card-value">10 in 5 cabins</p>
                     <p class="yacht-card-value">€23,210,000</p>
                   </li>
                 </ul>
@@ -360,22 +348,16 @@
                 <ul class="yacht-card-info">
                   <li class="yacht-card-info-item">
                     <p class="yacht-card-label">LENGTH</p>
-                    <p class="yacht-card-value">50m(155ft)</p>
-                  </li>
-                  <li class="yacht-card-info-item">
                     <p class="yacht-card-label">SHIPYARD</p>
-                    <p class="yacht-card-value">ISA</p>
-                  </li>
-                  <li class="yacht-card-info-item">
                     <p class="yacht-card-label">BUILT</p>
-                    <p class="yacht-card-value">2012</p>
-                  </li>
-                  <li class="yacht-card-info-item">
                     <p class="yacht-card-label">GUESTS</p>
-                    <p class="yacht-card-value">12 in 6 cabins</p>
+                    <p class="yacht-card-label">PRICE</p>
                   </li>
                   <li class="yacht-card-info-item">
-                    <p class="yacht-card-label">PRICE</p>
+                    <p class="yacht-card-value">50m(155ft)</p>
+                    <p class="yacht-card-value">ISA</p>
+                    <p class="yacht-card-value">2012</p>
+                    <p class="yacht-card-value">12 in 6 cabins</p>
                     <p class="yacht-card-value">€21,000,000</p>
                   </li>
                 </ul>
@@ -428,13 +410,51 @@
                 </li>
               </ul>
             </div>
-            <img
-              class="benefits-photo"
-              src="./images/main_images/deck.jpg"
-              alt="yachts deck"
-              width="540"
-              height="424"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./images/benefits-web/benefits-1440-d@1x.webp 1x,
+                  ./images/benefits-web/benefits-1440-d@2x.webp 2x
+                "
+                width="540"
+                height="424"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/benefits-web/benefits-1280-d@1x.webp 1x,
+                  ./images/benefits-web/benefits-1280-d@2x.webp 2x
+                "
+                width="432"
+                height="424"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/benefits-web/benefits-t@1x.webp 1x,
+                  ./images/benefits-web/benefits-t@2x.webp 2x
+                "
+                width="704"
+                height="424"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="
+                  ./images/benefits-web/benefits-m@1x.webp 1x,
+                  ./images/benefits-web/benefits-m@2x.webp 2x
+                "
+                width="335"
+                height="424"
+              />
+              <img
+                class="benefits-photo"
+                src="./images/main_images/deck.jpg"
+                alt="yachts deck"
+                width="540"
+                height="424"
+              />
+            </picture>
           </div>
         </div>
       </section>
